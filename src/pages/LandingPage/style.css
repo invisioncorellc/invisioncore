@@ -1,0 +1,64 @@
+.LandingPage {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background: #172d41fa;
+    justify-content: center;
+    color: #fff;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.title {
+    font-size: 4.0em;
+    letter-spacing: 4px;
+    font-weight: 600;
+    animation: 500ms flyIn ease-in alternate;
+}
+
+.subTitle {
+    font-size: 3em;
+    letter-spacing: 8px;
+    font-weight: 600;
+    animation: 300ms flyIn ease-in alternate, fadeIn;
+}
+
+.earth {
+    margin-top: 40px;
+    width: 200px;
+    height: 200px;
+    background: url('../../images/earth.png');
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: inset 0 0 40px rgba(255, 255, 255, .3);
+    animation: globe 25s linear infinite;
+}
+
+@keyframes globe {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 719px 0;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .title {
+        font-size: 300%;
+    }
+
+    .subTitle {
+        font-size: 150%;
+        margin-top: 20px;
+    }
+
+}

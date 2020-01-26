@@ -1,0 +1,74 @@
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    height: 8vh;
+    background: rgba(0, 0, 0, .4);
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, .7);
+}
+
+.logo {
+    height: 180px;
+    animation: 500ms flyIn ease-in-out alternate, 800ms fadeIn ease-in-out alternate;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, .7);
+    margin: 1%;
+    width: 10vw;
+    align-items: center;
+    display: none;
+}
+
+.joinNowButton {
+    padding: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    background: rgba(4, 97, 139, 0.581);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, .7);
+    letter-spacing: 1.1px;
+    box-shadow: 0px 0px 2px .2px rgba(255, 255, 255, .4);
+    transition: 150ms ease-in;
+}
+
+.joinNowButton:hover {
+    background: rgba(4, 97, 139, 0.881);
+    color: rgba(255, 255, 255, .8);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.joinNowButton:active {
+    transform: translateY(2px);
+}
+
+.linkItem {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 250ms ease-in;
+}
+
+.linkItem:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, .90);
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .NavBar {
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {
+        height: 200%;
+    }
+
+}
