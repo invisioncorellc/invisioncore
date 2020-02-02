@@ -16,7 +16,7 @@ const LoginModal = () => {
             <input type='password' className='input password' placeholder={'Password'} />
             <input type='password' className='input password' placeholder={'Confirm Password'} />
             <input type='text' className='input email' placeholder={'Email'} />
-            <button className='joinNowButton' onClick={(e) => submit(e)}>Get Started ></button>
+            <button className='submitButton' onClick={(e) => submit(e)}>Get Started ></button>
         </form>
     )
 }

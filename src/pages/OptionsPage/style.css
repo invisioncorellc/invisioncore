@@ -6,5 +6,17 @@
 }
 
 .optionTitle {
+    margin-top: 10px;
     font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.optionsModalContainer {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;  
+    justify-content: space-evenly;
+    text-align: center; 
+    width: 100vw; 
 }

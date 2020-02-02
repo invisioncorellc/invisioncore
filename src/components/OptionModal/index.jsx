@@ -7,8 +7,11 @@ class OptionModal extends Component {
 
     render() {
         return( 
-            <div className={`OptionModal ${this.props.modalNum}`} >
+            <div className={`${this.props.modal}`} >
             <h1 className='optionTitle'>{`${this.props.optionTitle}`}</h1>
+            <div className='optionPicture'></div>
+            <div className='optionDesc'></div>
+            <div></div>
             <div className=''></div>
             </div>
         )
