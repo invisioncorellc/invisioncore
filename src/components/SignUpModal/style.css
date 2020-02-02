@@ -24,7 +24,13 @@ input::placeholder {
     font-size: 1.1rem;
 }
 
+.block {
+    width: 100%;
+}
 
+.member {
+    font-size: 1.2rem;
+}
 
 .submitButton {
     padding: 12px;

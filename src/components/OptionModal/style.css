@@ -1,9 +1,11 @@
 .OptionModal {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     background: rgba(245, 245, 245, 0.075);
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
-    height: 59vh;
+    height: 55vh;
     width: 30%;
     transition: 300ms ease-in-out;
     backface-visibility: hidden;
@@ -14,7 +16,7 @@
 }
 
 .OptionModal.two {
-    animation: option2 750ms ease alternate, option2Scale 800ms ease alternate;
+    animation: option2Scale 700ms ease alternate;
     transform: scale(1.1);
 }
 
@@ -26,18 +28,35 @@
     font-weight: 600;
 }
 
-/* .OptionModal.one:hover {
-    transform: scale(1.1);
+.optionPicture {
+    margin-top: 70px;
+    height: 45%;
+    width: 20vw;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
-.OptionModal.two:hover {
-    transform: scale(1.1);
+.optionPicture.one {
+    background: url('../../images/investor.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.OptionModal.three:hover {
-    transform: scale(1.1);
-} */
+.optionPicture.two {
+    background: url('../../images/freelancer.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+
+.optionPicture.three {
+    background: url('../../images/bowner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 @keyframes option1 {
     0% {

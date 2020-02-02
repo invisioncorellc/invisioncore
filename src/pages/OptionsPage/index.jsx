@@ -12,18 +12,21 @@ const OptionsPage = () => {
             id: 1, 
             optionClassName: 'OptionModal one', 
             optionTitle: 'Investor', 
+            optionPictureClass: 'optionPicture one',
             optionDesc: '', 
         }, 
         {
             id: 2,
             optionClassName: 'OptionModal two',
             optionTitle: 'Freelancer',
+            optionPictureClass: 'optionPicture two',
             optionDesc: '',   
         }, 
         {
             id: 3,
             optionClassName: 'OptionModal three',
             optionTitle: 'Business Owner',
+            optionPictureClass: 'optionPicture three',
             optionDesc: '', 
         }
     ]
@@ -36,7 +39,7 @@ const OptionsPage = () => {
         {
            options.map(m => {
                console.log(m);
-               return (<OptionsModal key={m.id} modal={m.optionClassName} optionTitle={m.optionTitle} /> )
+               return (<OptionsModal key={m.id} modal={m.optionClassName} optionTitle={m.optionTitle} optionPicture={m.optionPictureClass}/> )
            }) 
         }
            

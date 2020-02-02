@@ -17,6 +17,7 @@ const NavBar = ({isSignUp}) => {
             <div className='NavBar'>
                 <img className='logo' src={Logo}></img>
                         <div className='navLinks'>
+                            <div className='linkItem'>Our Services</div>
                             <div className='joinNowButton' onClick={() => history.push('/signUp')}>Join the Community</div>
                             {/* <button className='joinNowButton' onClick={() => navigateSignUp()}>Post a Proposal</button> */}
                             <div className='linkItem'>Login</div>
