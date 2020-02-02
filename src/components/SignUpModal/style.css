@@ -1,0 +1,65 @@
+.LoginModal {
+    display: flex; 
+    flex-direction: column; 
+    height: 60vh; 
+    width: 30vw; 
+    background: rgba(55, 68, 85, 0.99);
+    border-radius: 7px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    transition: 500ms ease-in;
+    animation: flyInLeft 500ms ease-in alternate;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.4);
+  
+}
+
+input {
+    color: white; 
+}
+
+input::placeholder {
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+}
+
+
+
+.submitButton {
+    padding: 25px;
+}
+
+.input {
+    padding: 5px; 
+    border-top: none; 
+    border-right: none; 
+    border-left: none;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    background: none;
+    outline:none;
+    transition: 500ms ease;
+
+}
+
+.input:hover {
+    border-bottom: 2px solid rgba(255,255,255,1);
+
+}
+
+.input:focus {
+    border-bottom: 2px solid rgba(255,255,255,1);
+}
+
+@keyframes flyInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+

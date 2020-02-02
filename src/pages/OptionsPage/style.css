@@ -1,0 +1,10 @@
+.OptionsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh; 
+}
+
+.optionTitle {
+    font-size: 2.5rem;
+}

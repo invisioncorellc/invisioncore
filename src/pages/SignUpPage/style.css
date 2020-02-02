@@ -1,5 +1,14 @@
 .SignUpPage {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
     height: 90vh;
-    background: #172d41fa;
+    background: white;
 }
+
+.loginLogo {
+    height: 230px;
+    animation: 500ms flyIn ease-in-out alternate, 800ms fadeIn ease-in-out alternate;
+}
+
 

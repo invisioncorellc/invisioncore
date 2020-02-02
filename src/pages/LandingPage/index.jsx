@@ -1,20 +1,9 @@
-import React, {Component} from 'react'; 
-import NavBar from '../../components/NavBar'
+import React, {Component, useEffect, useState} from 'react'; 
+import { connect } from 'react-redux'; 
 import './style.css'; 
 
-
-class LandingPage extends Component {
-    constructor() {
-        super(); 
-        this.state = {}; 
-    }
-
-    componentDidMount() {
-        console.log('Component: Landing Page has mounted'); 
-    }
-
-    render() {
-        return(
+const LandingPage = ({isSignUp}) => { 
+    return(
             <div className='LandingPage'>
                 <div className='titleContainer'>
                     <h1 className='title'>Coming Soon</h1>
@@ -23,7 +12,17 @@ class LandingPage extends Component {
                 </div>
             </div>
         )
+}
+
+const mapStateToProps = (state) => ({
+    isSignUp: state.isSignUp, 
+})
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        signUpInActive: dispatch({type: 'SIGNUP_INACTIVE'}), 
     }
 }
 
-export default LandingPage; 
+
+export default connect(mapStateToProps, mapDispatchToProps)(LandingPage)

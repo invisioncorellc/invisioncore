@@ -1,32 +1,40 @@
-import React, {Component} from 'react'
-import Logo from '../../images/logo.png'
+import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import Logo from '../../images/logo.png';
 import history from '../../history';
 import './style.css'; 
 
 
-class NavBar extends Component {
-    constructor() {
-        super(); 
-        this.state = {}
-    }
 
-    componentDidMount() {
-        console.log('Component:  NavBar has mounted!');
-    }
+// Note use Selector can only be used inside of a fuctional componnt
+const NavBar = ({isSignUp}) => {
+        
+    const isActive = isSignUp; 
 
-    
-
-    render() {
         return ( 
+            <React.Fragment>
+            {!isActive ?
             <div className='NavBar'>
                 <img className='logo' src={Logo}></img>
-                <div className='navLinks'>
-                    <button className='joinNowButton' onClick={() => history.push('/signUp')}>Join Now</button>
-                    <div className='linkItem'>Login</div>
-                </div>
-            </div>
+                        <div className='navLinks'>
+                            <div className='joinNowButton' onClick={() => history.push('/signUp')}>Join the Community</div>
+                            {/* <button className='joinNowButton' onClick={() => navigateSignUp()}>Post a Proposal</button> */}
+                            <div className='linkItem'>Login</div>
+                        </div>
+                       
+                    </div> : null }
+                </React.Fragment>
         )
+    }
+
+const mapStateToProps = (state) => ({
+    isSignUp: state.isSignUp
+})
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+       // TODO
     }
 }
 
-export default NavBar; 
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar); 
