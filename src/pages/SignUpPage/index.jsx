@@ -23,7 +23,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        // signUpActive: dispatch({type: 'SIGNUP_ACTIVE'})
+        signUpActive: dispatch({type: 'SIGNUP_ACTIVE'})
     }
 }
 

@@ -4,26 +4,22 @@ import Logo from '../../images/logo.png';
 import history from '../../history';
 import './style.css'; 
 
-
-
-// Note use Selector can only be used inside of a fuctional componnt
 const NavBar = ({isSignUp}) => {      
     const isActive = isSignUp; 
         return ( 
             <React.Fragment>
-            {!isActive ?
+           
             <div className='NavBar'>
                 <img className='logo' src={Logo}></img>
                         <div className='navLinks'>
-                        {/* <div className='linkItem' onClick={() => history.push('/products')}>Products</div>
-                            <div className='linkItem' onClick={() => history.push('/services')}>Services</div> */}
-                            {/* <div className='button' onClick={''}>Schedule an Appointment</div> */}
+                        <div className='linkItem'>How it Works?</div>
+                        <div className='linkItem'>Our Services</div>
+                        {!isActive ?
                             <div className='button' onClick={() => history.push('/signUp')}>Join the Community</div>
-                            {/* <button className='joinNowButton' onClick={() => navigateSignUp()}>Post a Proposal</button> */}
+                            : <div className='button' onClick={() => history.push('/')}>Back To Landing</div>}
                             <div className='linkItem'>Login</div>
-                        </div>
-                       
-                    </div> : null }
+                        </div>  
+                    </div>
                 </React.Fragment>
         )
     }

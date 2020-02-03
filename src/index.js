@@ -10,10 +10,10 @@ import SignUpPage from './pages/SignUpPage';
 import OptionsPage from './pages/OptionsPage';
 import ProductsPage from './pages/ProductsPage';
 import ServicesPage from './pages/ServicesPage'; 
+import AccountCompletePage from './pages/AccountCompletePage'; 
 import history from './history';
 import {Provider} from 'react-redux'; 
 import store from  './store'; 
-
 
 ReactDOM.render(
 <React.Fragment>
@@ -45,6 +45,11 @@ ReactDOM.render(
                     exact 
                     path='/services'
                     component={ServicesPage}
+                />
+                <Route
+                    exact
+                    path='/signUpComplete'
+                    component={AccountCompletePage}
                 />
             </Switch>
         </Router>
