@@ -34,7 +34,7 @@ const OptionsPage = () => {
 
     return ( 
         <div className='OptionsPage'>
-        <img className='loginLogo' src={Logo}></img>
+        {/* <img className='loginLogo' src={Logo}></img> */}
         <div className='optionsModalContainer'>
         {
            options.map(m => {
@@ -54,7 +54,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        signUpActive: dispatch({type: 'SIGNUP_ACTIVE'})
+        // signUpActive: dispatch({type: 'SIGNUP_ACTIVE'})
     }
 }
 

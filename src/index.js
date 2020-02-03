@@ -8,6 +8,8 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import SignUpPage from './pages/SignUpPage'; 
 import OptionsPage from './pages/OptionsPage';
+import ProductsPage from './pages/ProductsPage';
+import ServicesPage from './pages/ServicesPage'; 
 import history from './history';
 import {Provider} from 'react-redux'; 
 import store from  './store'; 
@@ -34,6 +36,16 @@ ReactDOM.render(
                     path='/options'
                     component={OptionsPage}
                 /> 
+                <Route
+                    exact 
+                    path='/products'
+                    component={ProductsPage}
+                />
+                <Route 
+                    exact 
+                    path='/services'
+                    component={ServicesPage}
+                />
             </Switch>
         </Router>
         <Footer/>

@@ -4,8 +4,8 @@
     height: 59vh;
     width: 35vw;
     background: rgba(255, 255, 255, 0.99);
-    border-radius: 7px;
-    justify-content: space-evenly;
+    border-radius: 10px;
+    /* justify-content: space-evenly; */
     align-items: center;
     text-align: center;
     transition: 500ms ease-in;
@@ -24,12 +24,70 @@ input::placeholder {
     font-size: 1.1rem;
 }
 
+.input.email {
+    margin-top: 50px; 
+    width: 70%;
+}
+
 .block {
     width: 100%;
 }
 
 .member {
     font-size: 1.2rem;
+}
+
+.signUpTitleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    background: rgb(31, 41, 54);
+    width: 100%;
+}
+
+.googleSignIn {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px; 
+    font-size: 1.5rem; 
+    height: 6.5vh; 
+    background: rgba(248, 247, 247, 0.938);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,.3);
+    font-weight: 600; 
+    letter-spacing: 1.5px;
+    width: 80%;
+}
+
+.googleSignIn:hover {
+    cursor: pointer;
+}
+
+.emailSignIn {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px; 
+    margin-bottom: 40px;
+    font-size: 1.5rem; 
+    height: 6.5vh; 
+    background: rgba(248, 247, 247, 0.938);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,.3);
+    font-weight: 600; 
+    letter-spacing: 1.5px;
+    width: 80%;
+}
+
+.emailSignIn:hover {
+    cursor: pointer;
+}
+
+.signUpTitle {
+    color: white; 
+    font-size: 2rem; 
 }
 
 .submitButton {
@@ -54,8 +112,7 @@ input::placeholder {
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: 1px solid rgba(2, 107, 155, 0.836);
-    ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.836);
     background: none;
     outline: none;
     transition: 500ms ease;

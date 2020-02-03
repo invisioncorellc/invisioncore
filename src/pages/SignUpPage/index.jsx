@@ -11,7 +11,7 @@ const SignUpPage = ({isSignUp}) => {
        
         return (
             <div className='SignUpPage'>
-            <img className='loginLogo' src={Logo}></img>
+            {/* <img className='loginLogo' src={Logo}></img> */}
                 <LoginModal/>
             </div>
         )
@@ -23,7 +23,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        signUpActive: dispatch({type: 'SIGNUP_ACTIVE'})
+        // signUpActive: dispatch({type: 'SIGNUP_ACTIVE'})
     }
 }
 

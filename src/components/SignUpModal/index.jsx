@@ -13,13 +13,16 @@ const LoginModal = () => {
     return (
         <React.Fragment>
         <form className='LoginModal'>
-            <input type='text' className='input username' placeholder={'Username'} />
+            <div className='signUpTitleContainer'>
+                <h1 className='signUpTitle'>Get Your Free Account</h1>
+            </div>
+            <div className='googleSignIn'>Sign In with Google</div>
+            <div className=''></div>
+           {/* <input type='text' className='input username' placeholder={'Username'} />
             <input type='password' className='input password' placeholder={'Password'} />
-            <input type='password' className='input password' placeholder={'Confirm Password'} />
+            <input type='password' className='input password' placeholder={'Confirm Password'} /> */}
             <input type='text' className='input email' placeholder={'Email'} />
-            <button className='button' onClick={(e) => submit(e)}>Get Started ></button>
-            <hr className='block' />
-            <div className='member'>Already a Member?</div>
+            <div className='emailSignIn' onClick={() => history.push('/options')}>Sign up with Email</div>
         </form>
         </React.Fragment>
     )

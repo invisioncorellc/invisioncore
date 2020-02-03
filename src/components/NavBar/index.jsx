@@ -7,18 +7,18 @@ import './style.css';
 
 
 // Note use Selector can only be used inside of a fuctional componnt
-const NavBar = ({isSignUp}) => {
-        
+const NavBar = ({isSignUp}) => {      
     const isActive = isSignUp; 
-
         return ( 
             <React.Fragment>
             {!isActive ?
             <div className='NavBar'>
                 <img className='logo' src={Logo}></img>
                         <div className='navLinks'>
-                            <div className='linkItem'>Our Services</div>
-                            <div className='joinNowButton' onClick={() => history.push('/signUp')}>Join the Community</div>
+                        {/* <div className='linkItem' onClick={() => history.push('/products')}>Products</div>
+                            <div className='linkItem' onClick={() => history.push('/services')}>Services</div> */}
+                            {/* <div className='button' onClick={''}>Schedule an Appointment</div> */}
+                            <div className='button' onClick={() => history.push('/signUp')}>Join the Community</div>
                             {/* <button className='joinNowButton' onClick={() => navigateSignUp()}>Post a Proposal</button> */}
                             <div className='linkItem'>Login</div>
                         </div>
