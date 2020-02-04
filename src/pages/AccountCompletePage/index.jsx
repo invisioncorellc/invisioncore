@@ -13,8 +13,6 @@ const AccountCompletePage = () => {
             <div className='completeContainer'>
                 <div className='completeModal'>
                     <h1 className='completeTitle'>Complete your Registration</h1>
-                    {/* <h1>You're role is a {`${Role}`}</h1>
-                    <h1>You're role is a {`${Role}`}</h1> */}
                     <div className='completeInfoContainer'>
                         <input type='text' className='input first' placeholder={'First Name'} />
                         <input type='text' className='input last' placeholder={'Last Name'} />

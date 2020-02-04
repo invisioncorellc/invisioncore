@@ -1,0 +1,15 @@
+.LoginPage {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.loginContainer {
+    width: 75vw;
+
+}
+
+.detailsContainer {
+    width: 25vw;
+    background: rgb(31, 41, 54);
+}

@@ -21,6 +21,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => {
     return {
         signUpInActive: dispatch({type: 'SIGNUP_INACTIVE'}), 
+        isLoginPage: dispatch({ type: 'IS_NOTLOGINPAGE' }), 
     }
 }
 

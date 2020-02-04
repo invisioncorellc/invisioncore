@@ -11,6 +11,7 @@ import OptionsPage from './pages/OptionsPage';
 import ProductsPage from './pages/ProductsPage';
 import ServicesPage from './pages/ServicesPage'; 
 import AccountCompletePage from './pages/AccountCompletePage'; 
+import LoginPage from './pages/LoginPage'; 
 import history from './history';
 import {Provider} from 'react-redux'; 
 import store from  './store'; 
@@ -50,6 +51,11 @@ ReactDOM.render(
                     exact
                     path='/signUpComplete'
                     component={AccountCompletePage}
+                />
+                <Route 
+                    exact
+                    path='/login'
+                    component={LoginPage}
                 />
             </Switch>
         </Router>

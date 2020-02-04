@@ -4,8 +4,8 @@ import Logo from '../../images/logo.png';
 import history from '../../history';
 import './style.css'; 
 
-const NavBar = ({isSignUp}) => {      
-    const isActive = isSignUp; 
+const NavBar = ({isSignUp, isLogin}) => {      
+    const isActive = isSignUp || isLogin; 
         return ( 
             <React.Fragment>
            
@@ -17,7 +17,7 @@ const NavBar = ({isSignUp}) => {
                         {!isActive ?
                             <div className='button' onClick={() => history.push('/signUp')}>Join the Community</div>
                             : <div className='button' onClick={() => history.push('/')}>Back To Landing</div>}
-                            <div className='linkItem'>Login</div>
+                            <div className='linkItem' onClick={() => history.push('/login')}>Login</div>
                         </div>  
                     </div>
                 </React.Fragment>
@@ -25,7 +25,8 @@ const NavBar = ({isSignUp}) => {
     }
 
 const mapStateToProps = (state) => ({
-    isSignUp: state.isSignUp
+    isSignUp: state.isSignUp,
+    isLogin: state.isLoginPage
 })
 
 const mapDispatchToProps = (dispatch) => {
